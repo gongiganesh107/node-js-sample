@@ -1,8 +1,8 @@
 FROM node:latest
-MAINTAINER ADDRESS "ganeshpronodejs"
-RUN npm install
-WORKDIR /var
+WORKDIR /app
 COPY package*.json ./
+RUN npm install
+RUN npm run 
 COPY . .
 CMD ["npm","start"]
-EXPOSE 6000
+EXPOSE 3000
